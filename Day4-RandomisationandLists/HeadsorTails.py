@@ -9,4 +9,5 @@ if coins==1:
 else:
     print('Tails')
 
+
 print(random.random())

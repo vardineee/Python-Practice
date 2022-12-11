@@ -32,9 +32,7 @@ try_again = True
 
 while try_again:
     a_candidate = candidate_1()
-    print(a_candidate)
     b_condidate = candidate_2()
-    print(b_condidate)
     user_choice = input("Who has more followers? Type 'A' or 'B': ")
     if user_choice == "A":
         if a_candidate > b_condidate:

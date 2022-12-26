@@ -19,10 +19,7 @@ for articles_tag in articles:
 
 
 
-# article_text=article_tag.getText()
-# print(article_text)
-# article_link = article_tag.get("href")
-# print(article_link)
+
 article_votes = [int(score.getText().split()[0])  for score in soup.find_all(name="span", class_ = "score")]
 print(article_texts)
 print(article_links)
@@ -34,16 +31,6 @@ largest_index = article_votes.index(largest_number)
 
 print(article_texts[largest_index])
 print(article_links[largest_index])
-print(largest_number)
-# print(article_vote)
 
 
 
-# with open ("website.html") as file:
-#     contents = file.read()
-#
-# soup = BeautifulSoup(contents, "html.parser")
-# anch = soup.find_all(name="a")
-# print(anch)
-# for tag in anch:
-#     print(tag.get("href"))
